@@ -27,6 +27,11 @@ class UserListFilter extends QueryFilter
     {
         return $this->builder->whereLike('name', "%{$name}%");
     }
+
+    public function age(int $age): BaseQuery
+    {
+        return $this->builder->where('age', $age);
+    }
 }
 ```
 
