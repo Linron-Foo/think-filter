@@ -1,0 +1,30 @@
+{
+  "name": "linron/think-filter",
+  "description": "A package that makes ThinkPHP8 model search more elegant.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "filter",
+    "thinkphp"
+  ],
+  "authors": [
+    {
+      "name": "Linron",
+      "email": "547042792@qq.com",
+      "homepage": "https://github.com/Linron-Foo"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.0",
+    "topthink/framework": "^8.0",
+    "topthink/think-orm": "^3.0|^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "linron\\thinkfilter\\": "./src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
