@@ -65,10 +65,11 @@ use app\model\UserModel;
 class UserService
 {
 
-    public function getUserList(): array
+    public function getUserList(UserListSearchDto $searchDto): array
     {
         $args = [
             "name" => "测试bom123",
+            "age" => 18,
         ];
         $users = UserModel::modelFilter($args, UserListFilter::class)->paginate(['page' => 1, 'list_rows' => 10]);
         return [
